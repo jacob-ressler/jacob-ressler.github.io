@@ -1,11 +1,17 @@
-let activeModule = 'home'; // the current active module
+let activeModuleName = 'home'; // the current active module
+const animDuration = 500; // milliseconds
 
 function loadModule(name) {
-	// deload the active module with a fade out
-	// load the specified module
-	// maybe use a crossfade-style animation?
+	// module is already loaded
+	if (name == activeModuleName) return;
 
-	if (name == activeModule) return; // module is already loaded
+	document.getElementById(name).style.animation = 'blurFadeIn ' + animDuration + 'ms';
+	document.getElementById(activeModuleName).style.animation = 'blurFadeOut ' + animDuration + 'ms';
 
-	setTimeout(() => {}, 1000);
+	// finalize the opacity values and update activeModuleName
+	setTimeout(() => {
+		document.getElementById(name).style.opacity = 1;
+		document.getElementById(activeModuleName).style.opacity = 0;
+		activeModuleName = name;
+	}, animDuration);
 }
