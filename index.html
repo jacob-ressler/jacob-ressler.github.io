@@ -8,35 +8,33 @@
 		<title>Jacob Ressler | Home</title>
 	</head>
 	<body>
-		<!-- TODO: figure out srcset and see if it can be used to rotate through
-		some number of Firewatch backgrounds from https://imgur.com/a/snB5O 
-		ideally, advance 1 image on each module change. -->
-		<img class="bg-img" src="" srcset="" />
+		<!-- https://imgur.com/a/snB5O -->
+		<div class="bg-img"></div>
+		<div class="bg-overlay"></div>
+
 		<div class="navbar">
 			<ul>
-				<li class="selected">home</li>
-				<li>about</li>
-				<li>projects</li>
-				<li>contact</li>
+				<li><button onclick="">about</button></li>
+				<li><button onclick="">projects</button></li>
+				<li><button onclick="">resume</button></li>
+				<li><button onclick="">contact</button></li>
 			</ul>
 		</div>
 
 		<div class="module-container">
 			<div class="module" id="home">
 				<h1>hey there.</h1>
-				<h3>use the navigation bar or arrow keys to begin exploring.</h3>
+				<h3>use the navigation bar to begin exploring.</h3>
 			</div>
 			<div class="module inactive" id="about">
 				<h1>i'm jacob.</h1>
 				<h3>i love games, development, video production, and wrestling.</h3>
-				<h3></h3>
 			</div>
 			<div class="module inactive" id="projects"></div>
 			<div class="module inactive" id="contact"></div>
 		</div>
 		<div class="footer">
-			Designed by Jacob Ressler <br />
-			&copy; 2019
+			Designed by Jacob Ressler
 		</div>
 	</body>
 </html>
