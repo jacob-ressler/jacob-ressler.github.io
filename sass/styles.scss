@@ -108,7 +108,39 @@ body {
 	}
 }
 
-// Class to easily toggle specific elements off
-.inactive {
+#home {
+	animation: blurFadeIn 1000ms;
+}
+
+#about,
+#projects,
+#resume,
+#contact {
 	opacity: 0;
+}
+
+// ANIMATIONS
+
+$blur-amt: 40px;
+
+@keyframes blurFadeOut {
+	from {
+		filter: blur(0px);
+		opacity: 0;
+	}
+	to {
+		filter: blur($blur-amt);
+		opacity: 1;
+	}
+}
+
+@keyframes blurFadeIn {
+	from {
+		filter: blur($blur-amt);
+		opacity: 0;
+	}
+	to {
+		filter: blur(0px);
+		opacity: 1;
+	}
 }
