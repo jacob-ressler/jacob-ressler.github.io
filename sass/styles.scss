@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Chilanka&display=swap');
 
+// Used as an @include for elements that need a tablet media query
+@mixin tablet {
+	@media only screen and (max-width: 768px) {
+		@content;
+	}
+}
+
 $module-title-font: 'Chilanka', cursive;
 $module-desc-font: 'Amatic SC', cursive;
 
@@ -41,12 +48,24 @@ body {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 
+		@include tablet {
+			grid-template-columns: 1fr;
+			right: 0;
+		}
+
 		ul {
 			grid-column: 2 / 3;
 			display: flex;
 			flex-direction: row;
 			justify-content: space-around;
 			list-style: none;
+			justify-self: center;
+
+			@include tablet {
+				width: 100vw;
+				grid-column: 1 / 2;
+				justify-content: center;
+			}
 
 			li {
 				button {
@@ -60,6 +79,7 @@ body {
 					background: none;
 					width: 100%;
 					height: 100%;
+					text-align: center;
 				}
 				&:hover {
 					background-color: rgba(black, 0.5);
@@ -70,18 +90,22 @@ body {
 
 	.module-container {
 		width: 100vw;
-		height: 70vh;
 		position: relative;
-		transform: translate(0, -170vh);
+		transform: translate(0, -175vh);
 
+		display: flex;
+		flex-direction: column;
+		align-content: center;
 		.module {
 			position: absolute;
-			top: 10%;
+			top: 0;
 			left: 50%;
 			transform: translateX(-50%);
 			font-size: 3vmin;
 			text-align: center;
 			text-transform: uppercase;
+			width: 65%;
+			padding-bottom: 5vh;
 
 			h1 {
 				font-family: $module-title-font;
@@ -93,6 +117,27 @@ body {
 				font-family: $module-desc-font;
 				font-size: 2em;
 				font-weight: 200;
+				padding-bottom: 2rem;
+			}
+
+			$time-in: 200ms;
+			$time-out: 500ms;
+
+			a {
+				font-family: $module-desc-font;
+				font-size: 2em;
+				padding: 8px 16px;
+				border: solid white 2px;
+				border-radius: 20px;
+				color: white;
+				text-decoration: none;
+				background-color: rgba(white, 0);
+				transition: background-color ease-in-out $time-out, color ease-in-out $time-out;
+				&:hover {
+					background-color: rgba(white, 1);
+					color: black;
+					transition: background-color ease-in-out $time-in, color ease-in-out $time-in;
+				}
 			}
 		}
 	}
@@ -117,6 +162,7 @@ body {
 #projects,
 #resume,
 #contact {
+	display: none;
 	opacity: 0;
 }
 
