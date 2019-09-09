@@ -133,6 +133,12 @@ body {
 				text-decoration: none;
 				background-color: rgba(white, 0);
 				transition: background-color ease-in-out $time-out, color ease-in-out $time-out;
+
+				i {
+					color: inherit; // needed for transitions to work with fontawesome
+					padding-right: 0.5em;
+				}
+
 				&:hover {
 					background-color: rgba(white, 1);
 					color: black;
