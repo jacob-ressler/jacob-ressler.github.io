@@ -27,7 +27,7 @@ export class ContentComponent implements OnInit {
       this.updateContent(data);
     });
     this.placeholder.clear();
-    this.next = this.resolver.resolveComponentFactory(AboutComponent); // FIXME
+    this.next = this.resolver.resolveComponentFactory(LandingComponent); // FIXME
     this.placeholder.createComponent(this.next);
     
   }
