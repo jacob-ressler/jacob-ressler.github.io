@@ -1,0 +1,9 @@
+:host {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+
+  app-projects {
+    display: grid;
+  }
+}

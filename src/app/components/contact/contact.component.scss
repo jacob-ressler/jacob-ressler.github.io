@@ -1,0 +1,33 @@
+:host {
+  display: grid;
+  align-items: center;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  border: white min(5px, 0.5vw) solid;
+  margin: auto;
+  background-color: rgba(black, 0.3);
+  @media screen and (orientation: portrait) {
+    width: 80%;
+  }
+
+  a {
+    font-size: min(36px, 4vw);
+    font-weight: bolder;
+    text-decoration: none;
+    padding: min(20px, 2vh);
+    text-align: center;
+    color: white;
+    transform: scale(1);
+    transition: transform 300ms ease-out, color 300ms ease-out;
+
+    &:hover {
+      transform: scale(110%);
+      color: aquamarine;
+    }
+  }
+}

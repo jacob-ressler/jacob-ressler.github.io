@@ -1,0 +1,18 @@
+<div class="thumb-container">
+  <div
+    class="thumb"
+    [ngStyle]="{
+      'background-image': 'url(' + thumbpath + ')'
+    }"
+  ></div>
+</div>
+<div class="info">
+  <h1>{{ title }}</h1>
+  <p>{{ blurb }}</p>
+  <div class="links" [ngSwitch]="buttonType">
+    <a *ngSwitchCase="'view'" href="{{ links[0] }}">View</a>
+    <a *ngSwitchCase="'gplay'" href="{{ links[0] }}">Download</a>
+    <a *ngSwitchDefault href="{{ links[0] }}">Download</a>
+    <a href="{{ links[1] }}">GitHub</a>
+  </div>
+</div>

@@ -1,0 +1,81 @@
+$small: 320px;
+$mobile: 1479px;
+$tablet: 1200px;
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+p {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.project-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-content: flex-start;
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: rgba(black, 0.5);
+    border-radius: 100px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 100px;
+    border: 2px solid black;
+  }
+
+  @media screen and (orientation: portrait) {
+    height: calc(90vh - 250px);
+  }
+
+  @media screen and (orientation: landscape) {
+    height: calc(100vh - 150px);
+  }
+
+  @media screen and (max-width: $mobile) {
+    justify-content: center;
+  }
+}
+
+app-projectcard {
+  display: grid;
+
+  @media screen and (max-width: $mobile) and (orientation: portrait) {
+    width: min(100%, 600px);
+    grid-template-columns: min(30vw, 200px) min(60vw, 400px);
+    grid-template-rows: min(30vw, 200px);
+    font-size: min(3vw, 20px);
+  }
+  @media screen and (max-width: $mobile) and (orientation: landscape) {
+    width: min(100%, 600px);
+    grid-template-columns: min(20vw, 200px) min(40vw, 400px);
+    grid-template-rows: min(20vw, 200px);
+    font-size: min(2.2vw, 20px);
+  }
+
+  @media screen and (min-width: $mobile + 1) and (orientation: portrait) {
+    grid-template-columns: min(30vw, 200px) min(60vw, 400px);
+    grid-template-rows: min(30vw, 200px);
+    font-size: min(3vw, 20px);
+  }
+  @media screen and (min-width: $mobile + 1) and (orientation: landscape) {
+    grid-template-columns: 200px 400px;
+    grid-template-rows: 200px;
+    font-size: 20px;
+  }
+}

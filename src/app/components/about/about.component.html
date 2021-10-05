@@ -1,0 +1,20 @@
+<div class="bg">
+  <div class="text" id="abtText" [ngClass]="imgclass">
+    <div class="text-container">
+      <h1 id="abtTitle"></h1>
+      <p id="abtBody"></p>
+    </div>
+  </div>
+</div>
+<app-button
+  class="prevbtn"
+  text="<"
+  className="arrowbtn"
+  (btnClick)="loadPrevious()"
+></app-button>
+<app-button
+  class="nextbtn"
+  text=">"
+  className="arrowbtn"
+  (btnClick)="loadNext()"
+></app-button>

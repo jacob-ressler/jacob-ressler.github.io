@@ -1,38 +1,27 @@
-# My Portfolio
+# Portfolio
 
-I mean, it's pretty self-explanatory.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.4.
 
-- [Trello board](trello.com/b/wpMvccYI/portfolio-site)
-- [View here](jacob-ressler.github.io)
+## Development server
 
-## General Design Idea
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-I want the page to act "modularly", where mousing over or clicking on a navbar item will swap the current page module for the one belonging to the selected navbar item.
+## Code scaffolding
 
-## Known Issues/Bugs
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-None currently, so let's keep it that way.
+## Build
 
-## Languages Used
+Run `ng build` to build the project. The build artifacts will be stored in the `docs/` directory.
 
-- HTML5
-- [Sass](sass-lang.com) / CSS
-- JavaScript
-- JSON
-- PHP
+## Running unit tests
 
-## Regarding usage...
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-All source code is my own and is free to be used or modified for your own projects as you see fit.
+## Running end-to-end tests
 
-The following external libraries/extensions were used in this project:
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-- [jQuery](https://jquery.com/)
-- [FontAwesome](https://fontawesome.com/)
-- [Sass](https://sass-lang.com/)
+## Further help
 
-## Project Information
-
-- Developed by Jacob Ressler
-- Fall 2019 - ???
-
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

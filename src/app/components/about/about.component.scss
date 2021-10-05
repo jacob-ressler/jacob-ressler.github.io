@@ -1,0 +1,118 @@
+:host {
+  display: grid;
+  color: white;
+
+  width: 100%;
+  max-width: 1000px;
+  justify-self: center;
+
+  grid-template-columns: min(50px, 8vw) 1fr min(50px, 8vw);
+  grid-template-rows: 1fr;
+  grid-template-areas: "previous text next";
+
+  justify-items: center;
+  align-items: center;
+}
+
+.bg {
+  background-color: rgba(black, 0.7);
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.text {
+  grid-area: text;
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  transition: opacity 200ms ease;
+  opacity: 1;
+
+  // pseudo-element for faded bg images
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+    filter: blur(0px);
+  }
+
+  &.who::before {
+    background-image: url("../../../assets/about/who.jpg");
+  }
+  &.education::before {
+    background-image: url("../../../assets/about/education.png");
+  }
+  &.athletics::before {
+    background-image: url("../../../assets/about/athletics.jpg");
+  }
+  &.games::before {
+    background-image: url("../../../assets/about/games.jpg");
+  }
+  &.editing::before {
+    background-image: url("../../../assets/about/editing.jpg");
+  }
+
+  .text-container {
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    position: relative;
+    z-index: 5;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: grey;
+      border: 2px solid black;
+      border-radius: 100px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: black;
+    }
+
+    h1 {
+      font-size: min(8vw, 36px);
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: min(4vw, 24px);
+    }
+  }
+
+  @media screen and (orientation: portrait) {
+    max-height: 60vh;
+  }
+}
+
+app-button {
+  width: 100%;
+  height: 80vh;
+
+  @media screen and (orientation: portrait) {
+    height: 60vh;
+  }
+}
+
+.prevbtn {
+  grid-area: previous;
+}
+
+.nextbtn {
+  grid-area: next;
+}

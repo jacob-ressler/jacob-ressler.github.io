@@ -1,0 +1,49 @@
+[
+  {
+    "title": "Who Am I?",
+    "imgclass": "who",
+    "body": [
+      "I'm Jacob Ressler, nice to meet you :)",
+      "I was born in 1996 to two loving parents, both of whom are teachers. My mother teaches Kindergarten and my father teaches high school US History. My sister, 2 years my junior, is a Lutheran Youth Minister in Michigan.",
+      "Cleveland is my home. I've lived here my whole life and have grown to love the area. Still not always the biggest fan of the cold winters, but you get used to it after 25 years.",
+      "My interest in programming and development has always been a part of me, but I think it really began to show in the latter half of high school. I've always had a bit of engineering-style creativeness about me, an affinity for math and technology, and a near-insatiable desire to understand how and why things work the way they do."
+    ]
+  },
+  {
+    "title": "Education",
+    "imgclass": "education",
+    "body": [
+      "After 2 years of Preschool, I attended Messiah Lutheran for Kindergarten through Grade 8. The school is certainly on the small side, as my graduating class was only 14 students, but we were very tightknit, with most of us having been classmates for the majority of those 9 years.",
+      "I then went on to attend Lutheran West High School, where my father is both a teacher and a coach. While there, I was a member of the golf and wrestling teams. I was also a member of the school's Senney Honors Academy, an exclusive school organization for academically gifted students with the goal of setting its members up for success in and beyond college. The program was incepted my freshman year, and I was a member throughout all 4 years of high school.",
+      "From there, I went on to attend Cleveland State University with the goal of a Bachelor's Degree in Computer Science, which I achieved in the spring of 2021. While in attendance, I did not partake in many of the university's own clubs or organizations. Rather, I became a volunteer assistant coach for many of the various wrestling teams at Lutheran West, primarily the middle school club team and the high school boys and girls teams."
+    ]
+  },
+  {
+    "title": "Athletics",
+    "imgclass": "athletics",
+    "body": [
+      "I grew up playing rec league baseball until Grade 5. I was never amazing, especially at bat, but found a good niche as a pitcher in my final year.",
+      "In Grade 5 I developed a new athletic interest in the form of golf, one that stuck with me all the way through high school. Once again, I was never amazing, but I was good enough to crack the varsity line-up on occasion. I still love the sport but unfortunately don't get to go out and play nearly as much as I used to.",
+      "But the one sport that has been a part of my life for longer than I can even remember is wrestling. My father has been a high school wrestling coach since before I was born, so I've grown up in and around the sport. He began a youth wrestling program when I was in Kindergarten, and I stayed a competitive wrestler all the way through high school. I was a 2-time OAC State Qualifier in Junior High, both times at a whopping 74 lbs. In high school, I was a 3-year varsity wrestler, a 1-year team captain, and a 2-time OHSAA District Qualifier.",
+      "I stopped competitive athletics after graduating high school, but still continued my involvement in wrestling through volunteering as an assistant coach for our high school and club teams. Though most of my time since 2015 has been with the Junior High team, I've had my hand in all of our teams to various extents. This fall I will be stepping in as one of two primary coaches for out Youth Allstar team, which is comprised of the non-varsity and younger members of our Youth club team."
+    ]
+  },
+  {
+    "title": "Video Games",
+    "imgclass": "games",
+    "body": [
+      "I think it's fair to say that video games are a lot of the reason I ever chose to pursue Computer Science and programming. Like most people my age, I grew up playing and loving them. They were a huge part of my childhood and even still are a part of my adulthood.",
+      "I still have fond memories of gaming sessions with neighborhood friends. We would play anything from Halo to Super Smash Bros to Guitar Hero, always having a great time. Nowadays I'm not able to play nearly as much (probably for the best), but I still enjoy gaming as a casual pasttime whether it be solo or with some online friends. Some of my favorites are Hollow Knight, The Legend of Zelda: The Wind Waker, Halo, and Pokémon.",
+      "I've dabbled with game development in my free time, particularly in Unity. A few years ago I made and released an Android app that emulates a board game teammates and I used to play while at wrestling tournaments. It's like a 4-player mini-version of chess, but with some additional random elements in the form of dice that dictate what pieces you can move."
+    ]
+  },
+  {
+    "title": "Video Editing",
+    "imgclass": "editing",
+    "body": [
+      "I began teaching myself video editing in 2015 as a fun creative outlet, and it is something I still enjoy doing to this day. Being self-taught has allowed me to craft a unique style that lets me inject some of my own personality into the videos I make.",
+      "Nowadays, most of my time editing has become devoted to a friend of mine who creates content on Twitch and YouTube as a hobby. I take some of his Twitch streams and edit them into short YouTube videos for him to post. I also work with him and another friend to brainstorm content ideas for both YouTube and Twitch, which is always fun.",
+      "As this is just a hobby for me, my workflow uses exclusively free software. However, it certainly doesn't hold me back. My video editing software of choice is DaVinci Resolve, an industry-level program with a feature-rich community version. Any image editing is done using the open-source program Krita. Some other programs that I use if need be are Audacity for audio recording and OBS Studio for video recording."
+    ]
+  }
+]
