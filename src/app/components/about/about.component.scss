@@ -27,8 +27,8 @@
   height: 80vh;
   width: 100%;
   position: relative;
-  transition: opacity 200ms ease;
   opacity: 1;
+  transition: opacity 200ms ease;
 
   // pseudo-element for faded bg images
   &::before {
@@ -84,14 +84,27 @@
       background: black;
     }
 
-    h1 {
-      font-size: min(8vw, 36px);
-      text-align: center;
-      margin-bottom: 10px;
-    }
+    @media screen and (orientation: landscape) {
+      h1 {
+        font-size: min(6vw, 36px);
+        text-align: center;
+        margin-bottom: 10px;
+      }
 
-    p {
-      font-size: min(4vw, 24px);
+      p {
+        font-size: min(3vw, 24px);
+      }
+    }
+    @media screen and (orientation: portrait) {
+      h1 {
+        font-size: min(8vw, 36px);
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: min(4vw, 24px);
+      }
     }
   }
 
