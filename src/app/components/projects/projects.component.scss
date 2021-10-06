@@ -1,6 +1,4 @@
-$small: 320px;
 $mobile: 1479px;
-$tablet: 1200px;
 
 h1 {
   text-align: center;
@@ -9,17 +7,10 @@ h1 {
   color: white;
 }
 
-p {
-  color: white;
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
 .project-container {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  justify-content: left;
   align-content: flex-start;
   max-width: 1300px;
   width: 100%;
@@ -47,35 +38,27 @@ p {
     height: calc(100vh - 150px);
   }
 
-  @media screen and (max-width: $mobile) {
-    justify-content: center;
-  }
-}
+  app-projectcard {
+    display: grid;
+    margin: auto;
 
-app-projectcard {
-  display: grid;
+    @media screen and (max-width: $mobile) and (orientation: portrait) {
+      width: min(81vw, 600px);
+      grid-template-columns: min(27vw, 200px) min(54vw, 400px);
+      grid-template-rows: min(27vw, 200px);
+      font-size: min(3vw, 20px);
+    }
+    @media screen and (max-width: $mobile) and (orientation: landscape) {
+      width: min(57vw, 600px);
+      grid-template-columns: min(19vw, 200px) min(38vw, 400px);
+      grid-template-rows: min(19vw, 200px);
+      font-size: min(2.1vw, 20px);
+    }
 
-  @media screen and (max-width: $mobile) and (orientation: portrait) {
-    width: min(100%, 600px);
-    grid-template-columns: min(30vw, 200px) min(60vw, 400px);
-    grid-template-rows: min(30vw, 200px);
-    font-size: min(3vw, 20px);
-  }
-  @media screen and (max-width: $mobile) and (orientation: landscape) {
-    width: min(100%, 600px);
-    grid-template-columns: min(20vw, 200px) min(40vw, 400px);
-    grid-template-rows: min(20vw, 200px);
-    font-size: min(2.2vw, 20px);
-  }
-
-  @media screen and (min-width: $mobile + 1) and (orientation: portrait) {
-    grid-template-columns: min(30vw, 200px) min(60vw, 400px);
-    grid-template-rows: min(30vw, 200px);
-    font-size: min(3vw, 20px);
-  }
-  @media screen and (min-width: $mobile + 1) and (orientation: landscape) {
-    grid-template-columns: 200px 400px;
-    grid-template-rows: 200px;
-    font-size: 20px;
+    @media screen and (min-width: $mobile + 1) {
+      grid-template-columns: min(30vw, 200px) min(60vw, 400px);
+      grid-template-rows: min(30vw, 200px);
+      font-size: min(3vw, 20px);
+    }
   }
 }
